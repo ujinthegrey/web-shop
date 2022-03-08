@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:regular,100,500,600,700,800&display=swap&subset=cyrillic-ext" rel="stylesheet" />
+    <title>Козина</title>
+</head>
+
+<script>
+
+</script>
+
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container _container">
+                <a href="index.html" id="cataloge-link">
+                    <img class="header__logo" src="img/header/logo.svg" alt="logo">
+                </a>
+                <a href="" class="header__cart cart cart__disable">
+                    <div class="cart__icon _ibg">
+                    </div>                    
+                    <div class="cart__name">Корзина</div>
+                    <div class="cart__counter">1</div>
+                </a>
+            </img>
+        </header>
+
+        <main class="cart-list">
+            <div class="cart-list__container _container">
+                <h1 class="cart-list__header">Корзина</h1>
+                <div class="cart-list__body">
+                  
+                </div>
+                <div class="cart-list__sum">
+                    <p>Сумма <span id="price-sum">6330</span>&#160;&#8381;</p>
+                </div>
+            </div>
+            <section class="cart-list__form form">
+                <div class="form__container _container">
+                    <h1 class="form__header">Пожалуйста, представьтесь</h1>
+                    <form action="#"  method="POST" class="form__block block-form" id="form">                        
+                        <div class="block-form__group">
+                            <input
+                                type="text"
+                                class="block-form__input"
+                                id="name"
+                                name="User_name"
+                                placeholder="Ваше имя"
+                                required
+                                pattern="^[А-ЯЁ][а-яё]+$"
+                            ><br>
+                            <label for="name" class="block-form__label" id="name__label">
+                                <span class="form__error" aria-live="polite" role="alert">Поле заполнено неверно</span>
+                            </label>
+                        </div>
+                        <div class="block-form__group">
+                            <input
+                                type="tel"
+                                class="block-form__input"
+                                id="phone"
+                                name="user_phone"                                
+                                placeholder="Телефон"
+                                required
+                                maxlength="18"
+                                pattern="^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$"
+                            ><br>
+                            <label for="phone" class="block-form__label" id="phone__label">
+                                <span class="form__error" aria-live="polite" role="alert">Поле заполнено неверно</span>
+                            </label>
+                        </div>
+                        <div class="block-form__group">
+                            <input
+                                type="email"
+                                class="block-form__input"
+                                id="email"
+                                name="user_email"
+                                plaseholder="Email"
+                                required
+                            ><br>
+                            <label for="email" class="block-form__label" id="email__label">
+                                <span class="form__error" aria-live="polite" role="alert">Поле заполнено неверно</span>
+                            </label><br>
+                        <button id="submitBtn" type="submit" class="block-form__submit">Оформить заказ</button>
+                    </form>
+
+                </div>
+            </section>    
+        </main>
+        <footer class="footer">
+            <div class="footer__container _container">
+                <div class="footer__border">
+                    <div class="footer__text">Тестовое задание на должность младшего программиста «Лидера поиска», ver. 3.0</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <div id="popup" class="popup">
+        <div class="popup__body _closer"">
+            <div class="pouup__content">
+                <a href="#" class="popup__close _closer" id="popup-close">&times;</a>
+                <div class="popup__title">Спасибо Татьяна, ваш заказ №165796 оформлен.</div>
+                <div class="popup__text">В ближайшее время мы свяжемся с вами по телефону +7 (999) 999 - 99 - 99 для его подтверждения.</div>
+            </div>
+        </div> 
+    </div>
+    
+    <script src="js/app.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+</html>
